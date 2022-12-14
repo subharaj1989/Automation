@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="8.539">
+    <testcase classname="Validate BillPay functionality" name="Enter all valid data in the textboxes and click submit" time="6.305">
+        <failure message="Unable to Launch Application" type="java.lang.AssertionError"><![CDATA[Given User is on the login page.............................................failed
+And User enters valid username and password "TC_005_BillPay" in User and password textbox.skipped
+And User clicks on Signin button............................................skipped
+And User successfully logged in to the application..........................skipped
+Given the user clicks the Bill Pay link under Account Services..............skipped
+And User enters Payee Name "TC_005_BillPay".................................skipped
+And User enters Street Name.................................................skipped
+And User enters City........................................................skipped
+And User enters State.......................................................skipped
+And User enters Zip Code....................................................skipped
+And User enters Phone Number................................................skipped
+And User enters Account Number..............................................skipped
+And User enters Verify Account Number.......................................skipped
+And User enters Amount......................................................skipped
+And User enters Account type................................................skipped
+When User clicks Submit button..............................................skipped
+Then Bill pay successful label appears......................................skipped
+And User logs out...........................................................skipped
+
+StackTrace:
+java.lang.AssertionError: Unable to Launch Application
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepDefinition.Loginsteps.LaunchApplicaton(Loginsteps.java:31)
+	at ✽.User is on the login page(file:///C:/Users/Subha/git/repository/BDDTestProject/src/test/resources/features/billpay.feature:5)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate BillPay functionality" name="Enter invalid data in the textboxes and click submit" time="0.946">
+        <failure message="Unable to Launch Application" type="java.lang.AssertionError"><![CDATA[Given User is on the login page.............................................failed
+And User enters valid username and password "TC_005_BillPay" in User and password textbox.skipped
+And User clicks on Signin button............................................skipped
+And User successfully logged in to the application..........................skipped
+Given the user clicks the Bill Pay link under Account Services..............skipped
+And User enters Payee Name "TC_006_InValidBillPay"..........................skipped
+And User enters Street Name.................................................skipped
+And User enters City........................................................skipped
+And User enters State.......................................................skipped
+And User enters Zip Code....................................................skipped
+And User enters Phone Number................................................skipped
+And User enters Account Number..............................................skipped
+And User enters Verify Account Number.......................................skipped
+And User enters Amount......................................................skipped
+And User enters Account type................................................skipped
+When User clicks Submit button..............................................skipped
+Then Error message appears..................................................skipped
+And User logs out...........................................................skipped
+
+StackTrace:
+java.lang.AssertionError: Unable to Launch Application
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepDefinition.Loginsteps.LaunchApplicaton(Loginsteps.java:31)
+	at ✽.User is on the login page(file:///C:/Users/Subha/git/repository/BDDTestProject/src/test/resources/features/billpay.feature:5)
+]]></failure>
+    </testcase>
+</testsuite>
